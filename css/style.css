@@ -1,0 +1,14 @@
+:root {
+    --theme-color-light-blue: #F3F5FC ;
+    
+    --texto-color-dark-blue: #0A3871;
+
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+}
