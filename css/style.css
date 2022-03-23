@@ -1,14 +1,97 @@
 :root {
     --theme-color-light-blue: #F3F5FC ;
+    --theme-color-white: #ffffff;
     
     --texto-color-dark-blue: #0A3871;
-
+    --texto-color-white: #ffffff;
 }
-
 html {
     font-size: 62.5%;
 }
-
 body {
     font-family: 'Inter', sans-serif;
+    background-color: var(--theme-color-light-blue);
+    padding-left: 6%;
+    padding-right: 6%;
 }
+.cabecera {
+    padding: 1rem 0;
+}
+.container {
+    padding-top: 5.6rem;
+    padding-bottom: 4rem;
+}
+
+.container__input {
+    width: 100%;
+    font-size: 3.2rem;
+    color: var(--texto-color-dark-blue);
+    margin-bottom: 6.4rem;
+    box-sizing: border-box;
+    background-color: var(--texto-color-light-blue);
+    border: none;
+}
+.container__informacion {
+    margin-bottom: 1.6rem;
+}
+.icon {
+    color: red;
+}
+.informacion__texto {
+    font-size: 1.2rem;
+}
+
+.container__botones {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-bottom: 4.4rem;
+
+}
+.boton {
+    height: 6.7rem;
+    font-size: 1.6rem;
+    margin-bottom: 2.4rem;
+    border-radius: 24px;
+    border: none;
+}
+.botones__uno {
+    color:var(--texto-color-white);
+    background-color: var(--texto-color-dark-blue);
+}
+.botones__dos {
+    color:var(--texto-color-dark-blue);
+    border: 1px solid #0A3871;
+}
+.container__mensaje {
+    text-align: center;
+    background-color: var(--theme-color-white);
+    padding: 3.2rem;
+    border-radius: 3.2rem;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+}
+.mensaje__subtitulo{
+    font-size: 2.4rem;
+    font-weight: bold;
+    margin-bottom: 1.6rem;
+    line-height: normal;
+}
+.mensaje__texto {
+    font-size: 1.6rem;
+    line-height: normal;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
