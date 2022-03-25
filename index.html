@@ -10,36 +10,37 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
     <body>
-    <header class="cabecera">
-            <img src="./img/Logo.png" alt="">
-    </header> 
-
     <main class="container">
+        <div class="cabecera">
+            <img class="cabecera__imagen" src="./img/Logo.png" alt="">
+        </div> 
+        <div class="container__uno">
+            <textarea class="container__input" cols="30" rows="10" placeholder="Ingrese el texto aqui">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi, rerum, commodi quo obcaecati non rem minima deleniti assumenda, aliquid quaerat reiciendis! Quidem eligendi quod minima iste doloremque ratione tenetur suscipit?</textarea>
 
-        <textarea class="container__input" cols="30" rows="10" placeholder="Ingrese el texto aqui">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi, rerum, commodi quo obcaecati non rem minima deleniti assumenda, aliquid quaerat reiciendis! Quidem eligendi quod minima iste doloremque ratione tenetur suscipit?</textarea>
+            <section class="container__informacion">
+                <i class="fa-solid fa-circle-exclamation icon"></i>
+                <span class="informacion__texto">Solo letras minúsculas y sin acento</span>
+            </section>
 
-        <section class="container__informacion">
-            <i class="fa-solid fa-circle-exclamation icon"></i>
-            <span class="informacion__texto">Solo letras minúsculas y sin acento</span>
-        </section>
+            <section class="container__botones">
+                <button class="botones__uno boton">Encriptar</button>
+                <button class="botones__dos boton">Desencriptar</button>
+            </section>
+        </div>
 
-        <section class="container__botones">
-            <button class="botones__uno boton">Encriptar</button>
-            <button class="botones__dos boton">Desencriptar</button>
-        </section>
-
-        <section class="container__mensaje">
-            <div>
-                <h2 class="mensaje__subtitulo">Ningún mensaje fue encontrado</h2>
-                <p class="mensaje__texto">Ingresa el texto que deseas encriptar o desencriptar</p>
-            </div>
-        </section>
-
-        <section class="container__salida">
-            <textarea class="salida__texto" name="" id="" cols="30" rows="8">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam quas mollitia, cupiditate qui minima alias officiis quod harum, quasi aperiam cumque ut. Voluptate, totam. Porro earum labore veniam aspernatur nesciunt.</textarea>
-            <button class="salida__btn">Copiar</button>           
-        </section>
-
+        <div class="container__dos">
+            <section class="container__mensaje">
+                <img class="mensaje__imagen" src="./img/Muñeco.png" alt="muñeco">
+                <div>
+                    <h2 class="mensaje__subtitulo">Ningún mensaje fue encontrado</h2>
+                    <p class="mensaje__texto">Ingresa el texto que deseas encriptar o desencriptar</p>
+                </div>
+            </section>
+            <section class="container__salida">
+                <textarea class="salida__texto" name="" id="" cols="30" rows="10">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam quas mollitia, cupiditate qui minima alias officiis quod harum, quasi aperiam cumque ut. Voluptate, totam. Porro earum labore veniam aspernatur nesciunt.</textarea>
+                <button class="salida__btn">Copiar</button>           
+            </section>
+        </div>
 
     </main>
         <script src="main.js"></script>

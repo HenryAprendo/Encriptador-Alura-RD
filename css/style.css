@@ -17,16 +17,20 @@ body {
 .cabecera {
     padding: 1rem 0;
 }
+.cabecera__imagen{
+    width: 2rem;
+}
 .container {
-    padding-top: 5.6rem;
-    padding-bottom: 4rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
 }
 
 .container__input {
     width: 100%;
-    font-size: 3.2rem;
+    font-size: 2rem;
     color: var(--texto-color-dark-blue);
-    margin-bottom: 6.4rem;
+    margin-top: 6.4rem;
+    margin-bottom: 4.4rem;
     box-sizing: border-box;
     background-color: var(--texto-color-light-blue);
     border: none;
@@ -63,13 +67,22 @@ body {
     border: 1px solid #0A3871;
 }
 
-.container__mensaje {
+.container__dos{
     text-align: center;
-    background-color: var(--theme-color-white);
+    background-color: #ffffff;
     padding: 3.2rem;
     border-radius: 3.2rem;
     box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
     margin-bottom: 1rem;
+}
+.container__mensaje {
+    text-align: center;
+    margin-bottom: 1rem;
+    /* display: none; */
+ } 
+.mensaje__imagen {
+    width: 60%;
+    max-width: 200px;
 }
 .mensaje__subtitulo{
     font-size: 2.4rem;
@@ -82,16 +95,12 @@ body {
     line-height: normal;
 }
 
-/* Despliegue del mensaje de salida y el boton copiar */
 .container__salida {
-    background-color: var(--theme-color-white);
-    padding: 3.2rem;
-    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
-    border-radius: 32px;
-}
+    display: none;
+} 
 .salida__texto {
     width: 100%;
-    font-size: 2.4rem;
+    font-size: 2rem;
     box-sizing: border-box;
     background-color: var(--texto-color-white);
     border: none;
@@ -119,6 +128,38 @@ body {
         width: 48%;
     }
 }
+
+/* @media tablet 1024px */
+
+ @media screen and (min-width: 1024px) {
+    .container {
+        display: flex;
+        justify-content: space-between;
+        /* align-items:flex-start;  */
+    }
+    .container__uno {
+        width: 70%;
+        padding: 6rem;
+    }
+    .container__dos {
+        width: 30%;
+        height: 54rem;
+        background-color: var(--theme-color-white);
+    }
+    .cabecera {
+        padding:0;
+    }
+    .container__input {
+        margin-bottom: 13rem;
+    }
+    .container__mensaje {
+        margin-top: 13rem;
+     } 
+    .salida__texto{
+        margin-bottom: 25rem;   
+    }
+}  
+
 
 
 
