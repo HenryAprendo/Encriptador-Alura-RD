@@ -15,7 +15,7 @@
             <img class="cabecera__imagen" src="./img/Logo.png" alt="">
         </div> 
         <div class="container__uno">
-            <textarea class="container__input" cols="30" rows="10" placeholder="Ingrese el texto aqui">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi, rerum, commodi quo obcaecati non rem minima deleniti assumenda, aliquid quaerat reiciendis! Quidem eligendi quod minima iste doloremque ratione tenetur suscipit?</textarea>
+            <textarea class="container__input" data-input-texto cols="30" rows="10" placeholder="Ingrese el texto aqui"></textarea>
 
             <section class="container__informacion">
                 <i class="fa-solid fa-circle-exclamation icon"></i>
@@ -23,27 +23,27 @@
             </section>
 
             <section class="container__botones">
-                <button class="botones__uno boton">Encriptar</button>
-                <button class="botones__dos boton">Desencriptar</button>
+                <button class="botones__uno boton" data-btn-encriptar>Encriptar</button>
+                <button class="botones__dos boton" data-btn-desencriptar>Desencriptar</button>
             </section>
         </div>
 
         <div class="container__dos">
-            <section class="container__mensaje">
+            <section class="container__mensaje" id="eliminar-mensaje" >
                 <img class="mensaje__imagen" src="./img/Muñeco.png" alt="muñeco">
                 <div>
                     <h2 class="mensaje__subtitulo">Ningún mensaje fue encontrado</h2>
                     <p class="mensaje__texto">Ingresa el texto que deseas encriptar o desencriptar</p>
                 </div>
             </section>
-            <section class="container__salida">
-                <textarea class="salida__texto" name="" id="" cols="30" rows="10">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam quas mollitia, cupiditate qui minima alias officiis quod harum, quasi aperiam cumque ut. Voluptate, totam. Porro earum labore veniam aspernatur nesciunt.</textarea>
+            <section class="container__salida" id="visualizar-mensaje">
+                <textarea class="salida__texto" data-display name="" id="" cols="30" rows="10"></textarea>
                 <button class="salida__btn">Copiar</button>           
             </section>
         </div>
 
     </main>
-        <script src="main.js"></script>
+        <script type="module" src="main.js"></script>
         <script src="https://kit.fontawesome.com/e9f2ee8361.js" crossorigin="anonymous"></script>
     </body>
 </html>
