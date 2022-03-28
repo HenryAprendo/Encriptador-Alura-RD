@@ -1,3 +1,5 @@
+import mostrarMensaje from "./mostrarMensaje.js";
+
 const inputTexto = document.querySelector('[data-input-texto]');
 
 const agregarLetras = {
@@ -13,7 +15,7 @@ export const codificarTexto = () => {
     const arrayTexto = value.split('');
 
     const textoCodificado = arrayTexto.map( item => {
-        let elemento;
+        let elemento = null;
         switch(item){
             case 'a':
                 elemento = agregarLetras.a.split('');
@@ -39,12 +41,6 @@ export const codificarTexto = () => {
     const textoEncriptadoCadena = textoCodificado.flat().join('');
     const mostrarTexto = document.querySelector('[data-display]');
     mostrarTexto.value = textoEncriptadoCadena;
-
-    const eliminarMensaje = document.querySelector('#eliminar-mensaje');
-    eliminarMensaje.classList.add('eliminar-mensaje');
-
-    const visualizarMensaje = document.querySelector('#visualizar-mensaje');
-    visualizarMensaje.classList.add('visualizar-mensaje')
-
+    mostrarMensaje();
     inputTexto.value = '';
 }
