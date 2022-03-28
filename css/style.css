@@ -112,6 +112,16 @@ body {
     display: block;
 }
 
+.mensaje__copiado {
+    color: #aa0000;
+    font-size: 1.6rem;
+    position: absolute;
+    bottom: 30px;
+    display: none;
+}
+.mensaje__copiado-activo {
+    display: block;
+}
 .salida__texto {
     width: 100%;
     font-size: 2rem;
