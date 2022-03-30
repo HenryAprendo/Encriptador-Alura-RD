@@ -38,9 +38,11 @@ export const codificarTexto = () => {
         return elemento;
     });
     
-    const textoEncriptadoCadena = textoCodificado.flat().join('');
-    const mostrarTexto = document.querySelector('[data-display]');
-    mostrarTexto.value = textoEncriptadoCadena;
-    mostrarMensaje();
-    inputTexto.value = '';
+    if (textoCodificado.length !== 0) {
+        const textoEncriptadoCadena = textoCodificado.flat().join('');
+        const mostrarTexto = document.querySelector('[data-display]');
+        mostrarTexto.value = textoEncriptadoCadena;
+        mostrarMensaje();
+        inputTexto.value = '';
+    }
 }

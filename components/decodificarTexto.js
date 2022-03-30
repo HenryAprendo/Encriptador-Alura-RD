@@ -44,9 +44,11 @@ export const decodificarTexto = () => {
         }
 
     });
-  
-    const mostrarTexto = document.querySelector('[data-display]');
-    mostrarTexto.value = textoDesencriptado.join('');
-    mostrarMensaje();
-    inputTexto.value = '';
+
+    if(textoDesencriptado.length !== 0) {
+        const mostrarTexto = document.querySelector('[data-display]');
+        mostrarTexto.value = textoDesencriptado.join('');
+        mostrarMensaje();
+        inputTexto.value = ''; 
+    }    
 }
